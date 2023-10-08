@@ -3,6 +3,21 @@
 
 <title>    z5    </title>
 
+<style>
+    .center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 15vh;
+  }
+
+
+  .center form .close-button {
+    margin-top: 10px; 
+  }
+    </style>
+  
 <script language="JavaScript">
 function WinOpen()
 {
@@ -35,6 +50,7 @@ Wykonał Filip Bednarski mój numer to 3, czyli mam układ [(3) mod 4 = 3] ukła
   <input type="button_z5" name="grafika2" value="Obraz2" onclick="WinOpen_Bednarski(' ')">
   <input type="button_z5" name="grafika3" value="Obraz3" onclick="WinOpen_Bednarski(' ')">
   <input type="button_z5" name="grafika4" value="Obraz4" onclick="WinOpen_Bednarski(' ')">
+  <p align="center"><input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
 </form>
 
 </body>
