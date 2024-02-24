@@ -1,0 +1,66 @@
+<html>
+ <head>
+ <script type="text/javascript">
+ var monitor_Flis = {
+nazwisko: 'Flis',
+imie: 'Fabian',
+obiekt: 'Monitor',
+Marka: 'ASUS',
+Czestotliwosc: "144 Hz",
+Wymiary: "1920X1080",
+pokaz: function ()
+{
+ document.write(this.nazwisko + ' ' + this.imie + '<br>Obiekt: ' + this.obiekt+ '<br>Marka: ' + this.Marka+ '<br>Czestotliwosc: ' + this.Czestotliwosc+ '<br>Wymiary: ' + this.Wymiary)
+
+
+ }
+}
+monitor_Flis.pokaz();
+monitor_Flis.rok=2024;
+monitor_Flis.wypisz=function(){alert('Rok produkcji: ' +this.rok+ " rok")}
+
+monitor_Flis.wypisz();
+
+
+function kupujacy(nazwisko_k,imie_k,zawod_k,email_k)
+{
+this.nazwisko=nazwisko_k;
+this.imie=imie_k;
+this.zawod=zawod_k;
+this.email=email_k;
+}
+ kupujacy.prototype.wypisz = function () //definicja metody
+ {
+ alert(this.nazwisko + ' ' + this.imie+ ' ' + this.zawod + ' ' + this.email);
+ };
+var osoba1 = new kupujacy('Placek', 'Stanisław', 'Biznesman', 'Placus@email.pl'); 
+var osoba2 = new kupujacy('Wichura', 'Marzena', 'Nauczyciel', 'MaryWich@wp.pl');
+var osoba3 = new kupujacy('Kowal', 'Mirosław', 'Infromatyk', 'Kowalik@gmail.pl');
+osoba1.wypisz(); 
+osoba2.wypisz();
+osoba3.wypisz();
+ document.write("dostęp do właściwości"+"<br>");
+
+ document.write("<br>klient pierwszy"+" "+osoba1.nazwisko+" "+osoba1.imie+" "+osoba1.zawod, " "+osoba1.email);
+
+ document.write("<br>klient drugi"+" "+osoba2.nazwisko+" "+osoba2.imie+" "+osoba2.zawod, " "+osoba2.email);
+ 
+  document.write("<br>klient trzeci"+" "+osoba3.nazwisko+" "+osoba3.imie+" "+osoba3.zawod, " "+osoba3.email);
+ </script>
+ </head>
+<body bgcolor= "violet">
+<br>
+ Programowanie obiektowe. <br>
+ Obiekt to Monitor<br>
+ Pola:<br>
+ nazwisko<br>
+ imie<br>
+ Marka<br>
+  Czestotliwosc<br>
+   Wymiary<br>
+ metoda: pokaz<br>
+ Nowe pole to rok<br> 
+ nowa metoda to wypisz();<br>
+Metoda z 32: Monitor_Flis;
+</body>
+</html>
