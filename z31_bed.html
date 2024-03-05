@@ -1,37 +1,31 @@
 ﻿<html>
  <head>
  <script type="text/javascript">
- var monitor_Flis = {
-nazwisko: 'Flis',
-imie: 'Fabian',
-obiekt: 'Monitor',
-Marka: 'ASUS',
-Czestotliwosc: "144 Hz",
+ var dom_bedn = {
+nazwisko: 'Bednarski',
+imie: 'Filip',
+obiekt: 'dom',
 Wymiary: "1920X1080",
 pokaz: function ()
 {
- document.write(this.nazwisko + ' ' + this.imie + '<br>Obiekt: ' + this.obiekt+ '<br>Marka: ' + this.Marka+ '<br>Czestotliwosc: ' + this.Czestotliwosc+ '<br>Wymiary: ' + this.Wymiary)
+ document.write(this.nazwisko + ' ' + this.imie + '<br>Obiekt: ' + this.obiekt+ ' <br>Wymiary:  ' + this.Wymiary)
 
 
  }
 }
-monitor_Flis.pokaz();
-monitor_Flis.rok=2024;
-monitor_Flis.wypisz=function(){alert('Rok produkcji: ' +this.rok+ " rok")}
+dom_bedn.pokaz();
+dom_bedn.rok=2024;
 
-monitor_Flis.wypisz();
+dom_bedn.wypisz();
  </script>
  </head>
-<body bgcolor= teal>
+
 <br>
  Programowanie obiektowe. <br>
  Obiekt to Monitor<br>
  Pola:<br>
  nazwisko<br>
  imie<br>
- Marka<br>
-  Czestotliwosc<br>
-   Wymiary<br>
  metoda: pokaz<br>
  Nowe pole to rok<br> 
  nowa metoda to wypisz();<br>
