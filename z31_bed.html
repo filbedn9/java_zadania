@@ -1,34 +1,34 @@
-﻿<html>
- <head>
- <script type="text/javascript">
- var dom_bedn = {
-nazwisko: 'Bednarski',
-imie: 'Filip',
-obiekt: 'dom',
-Wymiary: "20x11x20",
-pokaz: function ()
-{
- document.write(this.nazwisko + ' ' + this.imie + '<br>Obiekt: ' + this.obiekt+ ' <br>Wymiary:  ' + this.Wymiary)
+<!DOCTYPE html>
+<html>
+<head>
+  <script type="text/javascript">
+    var dom_bedn = {
+      nazwisko: 'Bednarski',
+      imie: 'Filip',
+      obiekt: 'dom',
+      Wymiary: "20x11x20",
+      pokaz: function() {
+        document.write(this.nazwisko + ' ' + this.imie + '<br>Obiekt: ' + this.obiekt + ' <br>Wymiary:  ' + this.Wymiary + '<br>');
+      },
+      rok: 2024,
+      wypisz: function() {
+        document.write('Rok: ' + this.rok + '<br>');
+      }
+    };
 
-
- }
-}
-dom_bedn.pokaz();
-dom_bedn.rok=2024;
-
-dom_bedn.wypisz();
- </script>
- </head>
-
-<br>
- Programowanie obiektowe. <br>
- Obiekt to Monitor<br>
- Pola:<br>
- nazwisko<br>
- imie<br>
- metoda: pokaz<br>
- Nowe pole to rok<br> 
- nowa metoda to wypisz();<br>
- 
+    dom_bedn.pokaz();
+    dom_bedn.wypisz();
+  </script>
+</head>
+<body>
+  <br>
+  Programowanie obiektowe. <br>
+  Obiekt to Monitor<br>
+  Pola:<br>
+  nazwisko<br>
+  imie<br>
+  metoda: pokaz<br>
+  Nowe pole to rok<br>
+  nowa metoda to wypisz();<br>
 </body>
 </html>
