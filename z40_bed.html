@@ -17,6 +17,7 @@ h1 { text-transform: uppercase; }
 <input type="button" value="ODEJMOWANIE" onclick="roznica()">
 <input type="button" value="MNOŻENIE" onclick="iloczyn()">
 <input type="button" value="DZIELENIE" onclick="iloraz()">
+<input type="button" value="TEORIA-Bednarski" onclick="teoria()">
 <div id="wynik" style="margin-top:20px;"></div>
 <script>
 function suma()
@@ -87,6 +88,34 @@ var iloraz = a / b;
 document.getElementById("wynik").innerHTML = "Wynik działania wynosi: " + iloraz;
 }
 }
+}
+function teoria()
+{
+Pierwsza linia kodu - Wytłumaczenie linijki kodu
+
+<label for="a">Podaj pierwszą liczbę:</label> <input type="number" id="a">
+Ta linijka kodu HTML tworzy interfejs użytkownika składający się z etykiety (label)[opis
+wprowadzania danych, czyli tekst przed polem input] i pola do wprowadzania danych
+(input) w języku JavaScript (oraz HTML). label i input współpracują między sobą.
+Oto szczegółowy opis działania każdego elementu:
+<label for="a">Podaj pierwszą liczbę:</label>: Jest to element etykiety
+(<label>), który jest używany do identyfikacji pola formularza. Atrybut for w
+etykiecie odnosi się do identyfikatora (id) elementu formularza, do którego etykieta jest przypisana. W tym przypadku, for="a" oznacza, że etykieta jest przypisana do
+pola formularza z identyfikatorem id="a". Tekst Podaj pierwszą liczbę: jest
+wyświetlany jako opis pola formularza, pomagając użytkownikowi zrozumieć, jakie
+informacje powinien wprowadzić.
+<input type="number" id="a">: Jest to element formularza (<input>), który
+pozwala użytkownikowi na wprowadzenie danych. Atrybut type="number" określa,
+że pole przyjmie tylko wartości liczbowe, co oznacza, że użytkownik może
+wprowadzić tylko liczby (całkowite oraz zmiennoprzecinkowe, w zależności od
+przeglądarki i ustawień regionalnych). Atrybut id="a" nadaje temu polu formularza
+unikalny identyfikator, który może być używany w JavaScript i CSS do manipulacji
+lub stylizacji tego elementu.
+W praktyce, połączenie etykiety z polem formularza poprzez for i id ułatwia użytkownikom
+korzystanie z formularzy, szczególnie w przypadku osób korzystających z czytników ekranu,
+ponieważ po kliknięciu na etykietę, fokus zostaje automatycznie przesunięty do przypisanego
+pola formularza, co ułatwia wprowadzanie danych.
+
 }
 </script>
 </body>
